@@ -1,0 +1,250 @@
+@font-face {
+  font-family: CalFont;
+  src: url(./calculator/Calculator.ttf) format('truetype');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(55, 62, 72);
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
+}
+
+.heading{
+  font-size: 27px;
+  font-family: "CalFont";
+  color: greenyellow;
+}
+
+#screen{
+    border: 2px solid wheat;
+    height: 70px;
+    width: 320px;
+    border-radius: 10px;
+    background-color: teal;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: end;
+    font-family: "CalFont";
+}
+
+.parentMain{
+    background-color: black;
+    color: white;
+    width: 39%;
+    height: 95%;
+    border-radius: 15px;
+    border: 10px solid black;
+    border-bottom: 15px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 2px 10px rgb(63, 133, 218);
+    /* margin-bottom: 30px; */
+}
+
+.btnParent{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    max-width: 400px;
+    gap: 10px;
+    height: 250px;
+}
+
+.btns{
+    height: 45px;
+    width: 75px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    background-color: bisque;
+}
+
+.btns:hover{
+    cursor: pointer;
+    background-color: rgb(215, 187, 154);
+}
+
+.btns:active{
+    background-color: rgb(188, 158, 121);
+}
+
+.zero{
+    width: 170px;
+}
+
+.sml{
+    width: 70px;
+}
+
+.back{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 150px;
+}
+
+
+
+
+/* Media queries */
+@media (max-width: 320px) {
+    /* Mobile Small (320px) */
+    .parentMain {
+      width: 80%;
+    }
+    #screen{
+        width: 90%;
+        height: 50px;
+    }
+    .btnParent {
+      max-width: 300px;
+    }
+    .btns {
+      font-size: 18px;
+      width: 50px;
+      height: 35px;
+    }
+  }
+  
+  @media (min-width: 321px) and (max-width: 375px) {
+    /* Mobile Medium (375px) */
+    .parentMain {
+      width: 90%;
+    }
+    .btnParent {
+      max-width: 350px;
+    }
+  }
+  
+  @media (min-width: 376px) and (max-width: 425px) {
+    /* Mobile Large (425px) */
+    .parentMain {
+      width: 70%;
+    }
+    .btnParent {
+      max-width: 370px;
+    }
+  }
+  
+  @media (min-width: 426px) and (max-width: 768px) {
+    /* Tablet (768px) */
+    .parentMain {
+      width: 45%;
+      height: 80%;
+    }
+    .btnParent {
+      max-width: 99%;
+    }
+    .btns{
+      width: 65px;
+      height: 40px;
+      font-size: 20px;
+    }
+    .zero{
+      width: 130px;
+    }
+  
+   .sml{
+      width: 85px;
+    }
+    .back{
+      width: 120px;
+    }
+    #screen{
+      width: 75%;
+      height: 15%;
+      font-size: 80px;
+      border: 2px solid whitesmoke;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Laptop (1024px) */
+    .parentMain {
+      width: 35%;
+      height: 61%;
+    }
+    .btns{
+      width: 100px;
+      height: 40px;
+      font-size: 20px;
+    }
+    .zero{
+      width: 130px;
+    }
+  
+   .sml{
+      width: 85px;
+    }
+    .back{
+      width: 120px;
+    }
+    #screen{
+      width: 85%;
+      height: 15%;
+      font-size: 80px;
+      border: 2px solid whitesmoke;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    /* Laptop (1024px) */
+    .parentMain {
+      width: 28%;
+      height: 63%;
+    }
+  }
+  
+  @media (min-width: 1441px) {
+    /* Computer (2560px) */
+    .parentMain {
+      width: 22%;
+      height: 52%;
+      /* background-color: blueviolet; */
+      border-radius: 25px;
+      border: 5px;
+    }
+    .btnParent{
+        max-width: 93%;
+        height: 50%;
+        /* background-color: aqua; */
+    }
+
+    .btns{
+      width: 120px;
+      height: 80px;
+      font-size: 25px;
+    }
+    #screen{
+      width: 85%;
+      height: 15%;
+      font-size: 80px;
+      border: 2px solid whitesmoke;
+    }
+    .zero{
+      width: 230px;
+    }
+  
+   .sml{
+      width: 125px;
+    }
+    .back{
+      width: 220px;
+    }
+    .heading{
+      font-size: 55px;
+      font-family: "CalFont";
+      color: greenyellow;
+    }
+  }
